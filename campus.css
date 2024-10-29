@@ -1,0 +1,252 @@
+.fullscreen-section {
+    height: 100vh; /* viewport ki poori height */
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+  
+  /* Second section jo scroll par dikhayi degi */
+  .second-section {
+    height: 100vh; /* yeh bhi viewport height ka 100% legi */
+    background-color: #2196F3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+  }
+  
+  
+    
+ /* #parent{
+    background-color: #dadada;
+    width: 40%;
+    font-size: 40px;
+  }
+h1{
+
+
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size:50px;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+}
+.parent{
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+
+}
+.child1{
+  height: 500px;
+  width: 500px;
+  background-color: crimson;
+  border: #000;
+  
+}
+.child2{
+  height: 500px;
+  width: 500px;
+  background-color: crimson;
+  border: #000;
+}
+.child3{
+  height: 500px;
+  width: 500px;
+  background-color: crimson;
+  border: #000;
+} */
+
+html,body {
+  height: 100%;
+  width: 100%;
+}
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  
+}
+.nav{
+  height: 100px;
+  width: 100%;
+  /*background-color: red;*/
+  border-bottom: 2px solid #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+}
+.nav-part2{
+  display: flex;
+  /*background-color: blue;*/
+  align-items: center;
+  gap: 4vw;
+}
+.nav h2{
+  font: size 1.8vw; 
+  font-weight: 700px;
+
+}
+.nav h4{
+  font-size: 1.1vw;
+ /* display: none;*/
+}
+.nav button{
+  
+    font: 1vw;
+    padding:0.7vw 4vw;
+    background-color: #ff735c; 
+    color:#fff;
+    border: none;
+    border-radius:5px;
+    font-weight:600;
+    
+  }
+  
+
+
+.nav i{
+  
+  font-size: 1.6vw;
+  font-weight: 800;
+ /* display: none;*/
+}
+
+.content{
+  height: calc(100% - 100px);
+  width:100%;
+ /* background-color:burlywood;*/
+  display: flex;
+  position: relative;
+}
+
+.left{
+  height: 100%;
+  width:50%;
+ /* background-color: crimson;*/
+  padding:5vw 4vw;
+
+}
+.left h1{
+  font-size:4vw;
+  line-height:4.4vw;
+
+}
+.left h1 span{
+  color:#ff735c;
+}
+.left p{
+  font-size:1.2vw;
+  font-weight: 600;
+  color:#666;
+  width: 80%;
+  margin-top:3vw;
+  margin-bottom: 4vw;
+}
+
+ .content button{
+  font: 1.2vw;
+  padding:1vw 2vw;
+  background-color: #ff735c; 
+  color:#fff;
+  border: none;
+  border-radius:5px;
+  font-weight:700;
+}
+
+
+.right{
+  height: 100%;
+  width:45%;
+ /* background-color:royalblue ;*/
+  
+}
+.right img{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+  .nav{
+    background-color:#ff735c;
+    color:#fff;
+    padding: 0 5vw; 
+    height: 60px;
+
+  }
+  .nav h2{
+font-size: 6vw;
+  }
+  .nav h4{
+    font-size: 4vw;
+    display: none;
+  }
+  .nav button{
+    display: none;
+  }
+  .nav i{
+    display: block;
+    font-size: 4.5vw;
+  }
+  .content{
+    height: calc(100% - 60px);
+    flex-direction: column;
+  }
+  .left{
+    width: 100%;
+    height: 60%;
+  }
+  .right{
+    width:100%;
+    height: 50%;
+
+  }
+  .left h1{
+    font-size: 10vw;
+    line-height: 11vw;
+  }
+  .left p{
+    font-size: 3vw;
+    width: 90%;
+    margin-top: 5vw;
+    margin-bottom: 6vw;
+  }
+  .content button{
+    padding: 3vw 6vw;
+    font-size: 3.5vw;
+    border-radius:3px;
+    font-weight: 600;
+
+
+  }
+  
+}
